@@ -146,3 +146,113 @@ textarea {
     color: darkgreen;
     border: 3px solid darkgreen;
 }
+/* Mobile view */
+@media (max-width: 768px) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav {
+        position: static;
+        flex-direction: column;
+        padding: 8px 0;
+    }
+
+    nav .logo {
+        width: 48px;
+        margin: 4px auto;
+    }
+
+    .navbar {
+        margin: 0;
+        padding: 0 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px 4px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    .navbar a {
+        display: inline-block;
+        font-size: 15px;
+        padding: 6px 8px;
+    }
+
+    .booking {
+        padding: 24px 16px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .booking > p {
+        font-size: 1rem;
+    }
+
+    form {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        padding: 20px 16px;
+        box-shadow: 2px 2px 8px #3b3737;
+    }
+
+    fieldset {
+        margin-right: 0;
+        padding: 0.6rem 0;
+    }
+
+    fieldset > label {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    input,
+    textarea,
+    select {
+        margin: 6px 0 0 0;
+        font-size: 16px; /* prevents iOS zoom on focus */
+    }
+
+    select,
+    .room {
+        width: 100%;
+    }
+
+    .inline {
+        margin: 0 0.5em 0 0;
+    }
+
+    .submit-btn {
+        width: 100%;
+        min-width: 0;
+        font-size: 22px;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footlinks h4::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .end p {
+        font-size: 14px;
+        padding: 0 12px;
+    }
+}
